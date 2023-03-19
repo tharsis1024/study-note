@@ -10,9 +10,9 @@
 
 2023.3.18 花了半天时间在Ubuntu搭了环境起来,下午看了一下http协议版本的区别
 
-2023.3.19 研究了一下web路由和url的关系,感觉可以看一下goadhead的websRouteRequest(),顺便有几个问题:
-  * 这个route是对照goadhead的route.txt来建立的吗?
-  * URI,URL,URN概念,这三个是什么关系,在goadhead里是什么情况
+2023.3.19 研究了一下web路由和url的关系,感觉可以看一下goahead的websRouteRequest(),顺便有几个问题:
+  * 这个route是对照goahead的route.txt来建立的吗?
+  * URI,URL,URN概念,这三个是什么关系,在goahead里是什么情况
 
 </hr>
 ![图片](https://user-images.githubusercontent.com/102180824/226181358-c852416a-fbb6-4c11-83bb-ecebe3ee5e4d.png)
