@@ -14,3 +14,6 @@
   * 这个route是对照goadhead的route.txt来建立的吗?
   * URI,URL,URN概念,这三个是什么关系,在goadhead里是什么情况
 
+</hr>
+![图片](https://user-images.githubusercontent.com/102180824/226181358-c852416a-fbb6-4c11-83bb-ecebe3ee5e4d.png)
+贴个图到时候学到堆回来拷打自己
