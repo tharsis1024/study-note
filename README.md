@@ -86,3 +86,62 @@
 ### 2023.3.28 
 
 费了不少功夫算是装上qemu了,也下载到了DIR-815的固件,应该需要从bin文件提出来,明天又是满课,寄
+
+### 2023.3.29
+
+被binwalk提取bin文件卡住了,看看应该怎么分离出来,搜到的都是直接binwalk -e的
+
+
+
+今天顺便研究了下关于开辟栈的时候会开辟多大空间的问题,发现了一个比较有意思的点:
+
+```C
+#include <stdio.h>
+
+int funA();
+int funB();
+int funC();
+int funD();
+
+int main() {
+	int a = funA();
+	printf("%d\n", a);
+	int b = funB();
+	printf("%d\n", b);
+	int c = funC();
+	printf("%d\n", c);
+	int d = funD();
+	printf("%d\n", d);
+	return 0;
+}
+int funA() {
+	char a[10] = {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9'};
+	return sizeof(a);
+}
+int funB() {
+	int b[10] = {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9'};
+	return sizeof(b);
+}
+int funC() {
+	char c[] = "helloworld";
+	return sizeof(c);
+}
+int funD() {
+	char d[17] = {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16'};
+	return sizeof(d);
+}
+```
+
+执行时得到的在内存中的大小是
+
+![image-20230329163644698](https://tharsis.oss-cn-beijing.aliyuncs.com/image-20230329163644698.png)
+
+当使用IDA查看时得到的是rsp分别向下开辟了16,48,16,32,都是16的倍数,不知道是不是和内存对齐有关
+
+![image-20230329163914181](https://tharsis.oss-cn-beijing.aliyuncs.com/image-20230329163914181.png)
+
+![image-20230329163924946](https://tharsis.oss-cn-beijing.aliyuncs.com/image-20230329163924946.png)
+
+![image-20230329163937534](https://tharsis.oss-cn-beijing.aliyuncs.com/image-20230329163937534.png)
+
+![image-20230329163950239](https://tharsis.oss-cn-beijing.aliyuncs.com/image-20230329163950239.png)
