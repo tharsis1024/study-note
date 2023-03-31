@@ -145,3 +145,16 @@ int funD() {
 ![image-20230329163937534](https://tharsis.oss-cn-beijing.aliyuncs.com/image-20230329163937534.png)
 
 ![image-20230329163950239](https://tharsis.oss-cn-beijing.aliyuncs.com/image-20230329163950239.png)
+
+### 2023.3.30
+通过IDA看cgibin源码,目前跟踪到了sess_get_uid的位置
+
+![image-20230331195724361](https://tharsis.oss-cn-beijing.aliyuncs.com/image-20230331195724361.png)
+
+### 2023.3.31
+
+继续分析完剩余代码,明天开始看如何写这段shellcode
+
+![image-20230331220502416](https://tharsis.oss-cn-beijing.aliyuncs.com/image-20230331220502416.png)
+
+![image-20230331220941078](https://tharsis.oss-cn-beijing.aliyuncs.com/image-20230331220941078.png)
