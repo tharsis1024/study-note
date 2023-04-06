@@ -138,14 +138,6 @@ int funD() {
 
 当使用IDA查看时得到的是rsp分别向下开辟了16,48,16,32,都是16的倍数,不知道是不是和内存对齐有关
 
-![image-20230329163914181](https://tharsis.oss-cn-beijing.aliyuncs.com/image-20230329163914181.png)
-
-![image-20230329163924946](https://tharsis.oss-cn-beijing.aliyuncs.com/image-20230329163924946.png)
-
-![image-20230329163937534](https://tharsis.oss-cn-beijing.aliyuncs.com/image-20230329163937534.png)
-
-![image-20230329163950239](https://tharsis.oss-cn-beijing.aliyuncs.com/image-20230329163950239.png)
-
 ### 2023.3.30
 通过IDA看cgibin源码,目前跟踪到了sess_get_uid的位置
 
@@ -158,3 +150,23 @@ int funD() {
 ![image-20230331220502416](https://tharsis.oss-cn-beijing.aliyuncs.com/image-20230331220502416.png)
 
 ![image-20230331220941078](https://tharsis.oss-cn-beijing.aliyuncs.com/image-20230331220941078.png)
+
+### 2023.4.1-2023.4.4
+
+电脑电源线寄了,只能被迫看程序员的自我修养了
+
+确实是本好书,能理清很多知识点,可惜看到的有点晚
+
+### 2023.4.5
+
+终于是给送来线了,被卡了好久进度
+
+研究了会怎么用qemu,需要模拟32位小端mips
+
+### 2023.4.6
+
+一直在搭qemu-mipsel的环境,明天应该可以直接挂上这个环境了
+
+目前是通过scp 传到qemu,然后在宿主机用ssh+ chroot ./squashfs-root /+cp目录
+
+### 2023.4.7
