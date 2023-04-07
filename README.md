@@ -22,23 +22,17 @@
   * 这个route是对照goahead的route.txt来建立的吗?
   * URI,URL,URN概念,这三个是什么关系,在goahead里是什么情况
 
-![图片](https://user-images.githubusercontent.com/102180824/226181358-c852416a-fbb6-4c11-83bb-ecebe3ee5e4d.png)
-
-贴个图到时候学到堆回来拷打自己
-
 ### 2023.3.20
 
 基本了解了goahead的web模块的工作方式,URL和URI的关系也理清了,最直接的感觉是URI像是绝对路径而URL是相对路径
 
 ### 2023.3.21 
 
-找了一个cgi介绍的 https://zhuanlan.zhihu.com/p/25013398 对cgi有个一个大概印象了
+找了一个cgi介绍的文章 对cgi有个一个大概印象了
 
 ### 2023.3.22 
 
-继续看cgi,下午整ppt
-
-顺便解决了之前愚蠢的问题:heap应该就是通常说的堆,chunk就是堆内的块,被分隔开的空白的内存空间
+继续看cgi,顺便解决了之前愚蠢的问题:heap应该就是通常说的堆,chunk就是堆内的块,被分隔开的空白的内存空间
 
 ### 2023.3.23
 
@@ -53,11 +47,8 @@
 
 ### 2023.3.24 
 
-看到了两篇文章感觉很有意思,贴一下:
+看到了两篇文章感觉很有意思,对iot有了点了解
 
- https://zhuanlan.zhihu.com/p/245070099
- 
- https://zhuanlan.zhihu.com/p/26271959
 
 ### 2023.3.25
 
@@ -93,69 +84,20 @@
 
 
 
-今天顺便研究了下关于开辟栈的时候会开辟多大空间的问题,发现了一个比较有意思的点:
-
-```C
-#include <stdio.h>
-
-int funA();
-int funB();
-int funC();
-int funD();
-
-int main() {
-	int a = funA();
-	printf("%d\n", a);
-	int b = funB();
-	printf("%d\n", b);
-	int c = funC();
-	printf("%d\n", c);
-	int d = funD();
-	printf("%d\n", d);
-	return 0;
-}
-int funA() {
-	char a[10] = {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9'};
-	return sizeof(a);
-}
-int funB() {
-	int b[10] = {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9'};
-	return sizeof(b);
-}
-int funC() {
-	char c[] = "helloworld";
-	return sizeof(c);
-}
-int funD() {
-	char d[17] = {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16'};
-	return sizeof(d);
-}
-```
-
-执行时得到的在内存中的大小是
-
-![image-20230329163644698](https://tharsis.oss-cn-beijing.aliyuncs.com/image-20230329163644698.png)
-
-当使用IDA查看时得到的是rsp分别向下开辟了16,48,16,32,都是16的倍数,不知道是不是和内存对齐有关
+今天顺便研究了下关于开辟栈的时候会开辟多大空间的问题,发现rsp开辟新空间时分别向下开辟了16,48,16,32,都是16的倍数,不知道是不是和内存对齐有关
 
 ### 2023.3.30
 通过IDA看cgibin源码,目前跟踪到了sess_get_uid的位置
 
-![image-20230331195724361](https://tharsis.oss-cn-beijing.aliyuncs.com/image-20230331195724361.png)
 
 ### 2023.3.31
 
 继续分析完剩余代码,明天开始看如何写这段shellcode
 
-![image-20230331220502416](https://tharsis.oss-cn-beijing.aliyuncs.com/image-20230331220502416.png)
-
-![image-20230331220941078](https://tharsis.oss-cn-beijing.aliyuncs.com/image-20230331220941078.png)
 
 ### 2023.4.1-2023.4.4
 
-电脑电源线寄了,只能被迫看程序员的自我修养了
-
-确实是本好书,能理清很多知识点,可惜看到的有点晚
+电脑电源线寄了,只能被迫看书了,能理清很多知识点,可惜看到的有点晚
 
 ### 2023.4.5
 
@@ -170,3 +112,5 @@ int funD() {
 目前是通过scp 传到qemu,然后在宿主机用ssh+ chroot ./squashfs-root /+cp目录
 
 ### 2023.4.7
+
+大致写完了复现,明天看点新东西了
