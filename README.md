@@ -478,3 +478,9 @@ csapp 第九章已经全部看完
 ### 2023.8.1
 补上了aarch64和mipsel的编译环境,明天跑一下aarch64的qemu运行一下
 明天刷几道pwn题
+### 2023.8.2
+看完了程序员的自我修养的第四第五章,感觉比之前看的容易了
+顺便记一下nvram-faker的理解
+```
+nvram-faker貌似是通过LD_PRELOAD环境变量,可以改变程序的运行时的链接，可以在程序运行前定义优先加载的动态链接库,来达到覆盖系统函数的目的,nvram-faker编译的库会通过INI_FILE_PATH来从nvram.ini读取预设的参数 但貌似还是没法带到qemu-system用
+```
