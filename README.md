@@ -535,3 +535,8 @@ DIR645 user-mode已经调完 看看能不能进仿真环境试一下
 
 ### 2023.8.18
 上午停电,下午看了一下dockerfile相关的内容,,顺便写了点东西
+
+### 2023.8.19 
+花了一上午逆完了东西,下午dockerfile
+
+https://www.cnblogs.com/tharsis/articles/17643362.html
