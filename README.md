@@ -540,3 +540,7 @@ DIR645 user-mode已经调完 看看能不能进仿真环境试一下
 花了一上午逆完了东西,下午dockerfile
 
 https://www.cnblogs.com/tharsis/articles/17643362.html
+2023.8.27
+最后一个周在家陪陪家里人,昨天刚刚返校
+
+上午搬搬行李,下午复现一下漏洞,明天就开始上课了
