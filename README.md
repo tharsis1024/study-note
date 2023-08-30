@@ -552,3 +552,6 @@ https://www.cnblogs.com/tharsis/articles/17643362.html
 继续复现洞 
 
 固件貌似有涉及到链表 抽时间了解一下
+
+2023.30
+复现完成 这个洞貌似并不存在固件相同的情况
