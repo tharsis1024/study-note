@@ -559,3 +559,6 @@ https://www.cnblogs.com/tharsis/articles/17643362.html
 
 ### 2023.8.31 
 看了下程序员自我修养 试了试几个totolink固件 都没跑起来
+
+### 2023.9.1
+继续看程序员自我修养 
