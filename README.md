@@ -562,3 +562,6 @@ https://www.cnblogs.com/tharsis/articles/17643362.html
 
 ### 2023.9.1
 继续看程序员自我修养 
+
+### 2023.9.2
+继续看了下静态链接 
