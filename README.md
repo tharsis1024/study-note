@@ -565,3 +565,8 @@ https://www.cnblogs.com/tharsis/articles/17643362.html
 
 ### 2023.9.2
 继续看了下静态链接 
+
+### 2023.9.3
+重新看了下srop 过几天找个题试一下
+
+### 2023.9.4
