@@ -570,3 +570,4 @@ https://www.cnblogs.com/tharsis/articles/17643362.html
 重新看了下srop 过几天找个题试一下
 
 ### 2023.9.4
+复现完固件 明天看看ucore 
