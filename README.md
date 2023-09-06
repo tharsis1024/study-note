@@ -571,3 +571,8 @@ https://www.cnblogs.com/tharsis/articles/17643362.html
 
 ### 2023.9.4
 复现完固件 明天看看ucore 
+
+### 2023.9.5
+搭完ucore环境了 开始看新洞 
+
+顺便过个生日
