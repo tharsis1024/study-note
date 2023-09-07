@@ -576,3 +576,5 @@ https://www.cnblogs.com/tharsis/articles/17643362.html
 搭完ucore环境了 开始看新洞 
 
 顺便过个生日
+### 2023.9.6
+复现WRT54G
