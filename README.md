@@ -578,3 +578,8 @@ https://www.cnblogs.com/tharsis/articles/17643362.html
 顺便过个生日
 ### 2023.9.6
 复现WRT54G
+### 2023.9.7
+修复WRT54G环境
+
+### 2023.9.8
+编译时一直没解决gcc版本问题,明天再试试
