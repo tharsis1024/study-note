@@ -585,4 +585,6 @@ https://www.cnblogs.com/tharsis/articles/17643362.html
 编译时一直没解决gcc版本问题,明天再试试
 
 ### 2023.9.9
+复现WRT54G
+### 2023.9.10
 复现完WRT54G
