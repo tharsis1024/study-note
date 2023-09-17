@@ -599,3 +599,6 @@ https://www.cnblogs.com/tharsis/articles/17643362.html
 
 ### 2023.9.15
 开始接触点车联网相关内容
+
+### 2023.9.16
+搞搞取证题目
