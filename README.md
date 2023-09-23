@@ -613,3 +613,5 @@ https://www.cnblogs.com/tharsis/articles/17643362.html
 身体不适 
 ### 2023.9.21
 刷刷x86架构栈溢出
+###2023.9.22
+看ctf wiki 顺便做几个例题
