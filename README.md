@@ -576,8 +576,10 @@ https://www.cnblogs.com/tharsis/articles/17643362.html
 搭完ucore环境了 开始看新洞 
 
 顺便过个生日
+
 ### 2023.9.6
 复现WRT54G
+
 ### 2023.9.7
 修复WRT54G环境
 
@@ -586,6 +588,7 @@ https://www.cnblogs.com/tharsis/articles/17643362.html
 
 ### 2023.9.9
 复现WRT54G
+
 ### 2023.9.10
 复现完WRT54G
 
@@ -611,7 +614,15 @@ https://www.cnblogs.com/tharsis/articles/17643362.html
 
 ### 2023.9.20
 身体不适 
+
 ### 2023.9.21
 刷刷x86架构栈溢出
-###2023.9.22
+
+### 2023.9.22
 看ctf wiki 顺便做几个例题
+
+### 2023.9.23-9.24
+队内训练
+
+### 2023.9.25
+继续看ctfwiki的pwn
