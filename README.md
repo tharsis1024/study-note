@@ -626,3 +626,6 @@ https://www.cnblogs.com/tharsis/articles/17643362.html
 
 ### 2023.9.25
 继续看ctfwiki的pwn
+
+### 2023.9.26
+整理一些iot相关的内容
