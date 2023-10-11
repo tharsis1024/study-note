@@ -644,3 +644,6 @@ https://www.cnblogs.com/tharsis/articles/17643362.html
 
 ### 2023.10.9
 整理一部分嵌入式服务程序
+
+### 2023.10.10
+开始看bt协议
